@@ -1,0 +1,56 @@
+.left form {
+	width: 80%;
+	margin-left: 20;
+	float: left;
+}
+
+.left form input{
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	background-color: #fafafa;
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+.left form input:focus, form textarea:focus {
+	border: 3px double purple;
+}
+
+.left form label {
+	float: left;
+	width: 60%;
+	margin-bottom: 10px;
+}
+
+.left form textarea {
+	width: 80%;
+	float: left;
+	clear: both;
+	padding: 10px;
+	border: 2px solid silver;
+	font-size: 1.3em;
+}
+
+.left form #send {
+	width: 30%;
+	float: left;
+	padding: 5px;
+	background-color: purple;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: 1.5em;
+	color: #fafafa;
+	cursor: pointer;
+}
+
+.left form #send:hover{
+	background-color: #471157;
+	color: #fff;
+}
+
+.left form #send:active{
+	border: 3px double silver;
+}
