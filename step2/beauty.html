@@ -7,26 +7,24 @@
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
     <meta name = "keywords" content = "blog, travel, cooking, beauty" />
     <meta name = "description" content = "Test site" />
-    <link href="style.css" rel = "stylesheet" type="text/css" />
-    <link href="previewStyle.css" rel = "stylesheet" type="text/css" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel = "stylesheet" type="text/css" />
+    <link href="css/previewStyle.css" rel = "stylesheet" type="text/css" />
     <link href="img/icon.ico" rel="shortcut icon" type="image/x-icon" >
 </head>
 <body>
     <header>
-         <a href = "index.html" ><img id = "logo" src="img/logo.png" /> </a>
+         <a href = "index.html"><h1>MY BLOG</h1></a>
     </header>
     <div class="wrapper">
-        <div class="clear"><br /></div>
-        <center>
-            <menu>
-                <a href = "index.html" >HOME</a>
-                <a href = "beauty.html" >BEAUTY</a>
-                <a href = "cooking.html" >COOKING</a>
-                <a href = "travel.html" >TRAVEL</a>
-                <a href = "contact.html" >CONTACT</a>
-                <a href = "about.html" >ABOUT ME</a>
-            </menu>
-        </center>
+        <menu type = "list">
+            <li><a href = "index.html" >HOME</a></li>
+            <li><a href = "beauty.html" >BEAUTY</a></li>
+            <li><a href = "cooking.html" >COOKING</a></li>
+            <li><a href = "travel.html" >TRAVEL</a></li>
+            <li><a href = "contact.html" >CONTACT</a></li>
+            <li><a href = "about.html" >ABOUT ME</a></li>
+        </menu>
         <div class="content">
             <div class="left">
                <div class = "preview">
@@ -34,7 +32,7 @@
                     <img src="img/beauty1.jpg" alt="Image1" title="Image1" />
                     <h3>Title1</h3>
                     <p>Article preview</p>
-                    <a href="" title= "Read more">Read more</a>
+                    <a href="article1.html" title= "Read more">Read more</a>
                 </div>
                 <div id = "article">
                     <img src="img/beauty2.jpg" alt="Image2" title="Image2" />
@@ -56,29 +54,82 @@
                     <a href="" title= "Read more">Read more</a>
                 </div>
                </div>
-               <div class = "arrow"><a href= ""><img src="img/left.png" alt = "left" /><h2>PREV</h2></div>
-               <div class = "arrow"><a href= ""><img src="img/right.png" alt = "right" /><h2>NEXT<h2></div>
+               <div class = "arrowl"><a href= ""><img src="img/left.png" alt = "left" /></a></div>
+               <div class = "arrowr"><a href= ""><img src="img/right.png" alt = "right" /></a></div>
             </div>
             <div class="right">
-                <form name ="search" action="" method = "post">
-                    <!-- <label for="find">Search</label> -->
-                    <input type = "search" class = "field" placeholder = "Search..." name = "find" />
-                    <!-- <input type = "submit" name = "findbutton" value = "Search" /> -->
-                    <hr>
-                    <div class = "archive">
-                        <p>Archive</p>
-                        <details> 
-                            <summary>2016</summary>
-                                <p> August <p>
-                                <p> July <p>
-                                <p> June <p>
-                        </details>
-                        <details>
-                            <summary>2015</summary>
-                                <p> July <p>
-                                <p> June <p>
-                        </details>
-                    </div>
+            <form name ="search" action="" method = "post">
+                <!-- <label for="find">Search</label> -->
+                <input type = "search" class = "field" placeholder = "Search..." name = "find" />
+                <!-- <input type = "submit" name = "findbutton" value = "Search" /> -->
+                <hr>
+                <h5>Archive</h5>
+                <div class = "archive">
+                    <ul class = "hierarchy">
+                        <li class = "year">
+                            <input class="hide" id="2016" type="checkbox">
+                            <label for="2016">2016</label>
+                            <div>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="August2016" type="checkbox">
+                                        <label for="August2016">August</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="July2016" type="checkbox">
+                                        <label for="July2016">July</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class = "hierarchy">
+                        <li class = "year">
+                            <input class="hide" id="2015" type="checkbox">
+                            <label for="2015">2015</label>
+                            <div>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="November2015" type="checkbox">
+                                        <label for="November2015">November</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="December2015" type="checkbox">
+                                        <label for="December2015">December</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div style = "clear:both"></div>
         </div>

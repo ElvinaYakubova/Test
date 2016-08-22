@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+       <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name = "keywords" content = "blog, travel, cooking, beauty" />
+    <meta name = "description" content = "Test site" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <!-- <link href="style.css" rel = "stylesheet" type="text/css" /> -->
+    <link href="img/icon.ico" rel="shortcut icon" type="image/x-icon" >
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="thumbelina.css" />
+        <script type="text/javascript" src="thumbelina.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                
+                $('#slider1').Thumbelina({
+                    $bwdBut:$('#slider1 .left'),    // Selector to left button.
+                    $fwdBut:$('#slider1 .right')    // Selector to right button.
+                });
+                
+                
+              
+            })
+        </script>    
+
+        <style type="text/css">
+            /* Some styles for the containers */
+            #slider1 {
+                position:relative;  /* Containers need relative or absolute position. */
+                margin-left:20px;
+                width:256px;
+                height:120px;
+                border-top:1px solid #aaa;
+                border-bottom:1px solid #aaa;
+            }
+
+            
+        </style>
+
+    </head>
+    <body>
+        <div id="slider1">
+            <div class="thumbelina-but horiz left">&#706;</div>
+            <ul>
+                <li><img src="images/image1.jpg"></li>
+                <li><img src="images/image2.jpg"></li>
+                <li><img src="images/image3.jpg"></li>
+                <li><img src="images/image4.jpg"></li>
+                <li><img src="images/image5.jpg"></li>
+                <li><img src="images/image6.jpg"></li>
+            </ul>
+            <div class="thumbelina-but horiz right">&#707;</div>
+        </div>    
+    </body>
+
+</html>

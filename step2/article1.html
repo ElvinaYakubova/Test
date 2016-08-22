@@ -1,0 +1,133 @@
+<!doctipe html>
+<html>
+<head>
+    <title>
+        My blog
+    </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name = "keywords" content = "blog, travel, cooking, beauty" />
+    <meta name = "description" content = "Test site" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel = "stylesheet" type="text/css" />
+    <link href="css/contact.css" rel = "stylesheet" type="text/css" />
+    <link href="img/icon.ico" rel="shortcut icon" type="image/x-icon" >
+</head>
+<body>
+    <header>
+         <a href = "index.html"><h1>MY BLOG</h1></a>
+    </header>
+    <div class="wrapper">
+        <menu type = "list">
+            <li><a href = "index.html" >HOME</a></li>
+            <li><a href = "beauty.html" >BEAUTY</a></li>
+            <li><a href = "cooking.html" >COOKING</a></li>
+            <li><a href = "travel.html" >TRAVEL</a></li>
+            <li><a href = "contact.html" >CONTACT</a></li>
+            <li><a href = "about.html" >ABOUT ME</a></li>
+        </menu>
+        <div class="content">
+        	<div class="left">
+                <article> 
+        			<a class = "title" href=""><h2>Title</h2></a>
+        			<p> Test article Test article Test article Test article Test article Test article Test article Test article Test article Test article Test article Test article Test article
+        		    <h4>15 August 2016</h4>
+                    <h3>Category: Travel</h3>
+                    <div class = "act">
+                        <a href = "" id = "vote"><img src = "img/like.png" alt="Vote: like" title="Vote: like"/>(cnt)</a>
+                        <a href = "" id = "vote"><img src = "img/dislike.png" alt="Vote: dislike" title="Vote: dislike" />(cnt)</a>
+                        <a href = "#comment" id = "comment"><img src = "img/comment.png" alt="Comment" title="Comment"  />(cnt)</a>
+                        <a href = "" id = "fav" ><img src = "img/fav.png" alt="Add to fav" title="Add to fav" /> </a>
+                    </div>
+                    <div style = "clear:both"></div>
+                </article>
+                 <form action = "" method = "post">
+                    <a name = "comment"></a>
+                    <label for="message">Live a reply</label>
+                    <textarea placeholder = "Enter your comment" name = "message" id = "message"></textarea>
+                    <label for="email">Email</label>
+                    <input type = "email" class = "field" placeholder = "Enter email" name = "email" id = "email"/>
+                    <label for="name">Name</label>
+                    <input type = "text" class = "field" placeholder = "Enter name" name = "name" id = "name" />
+                    <input type = "submit" value = "Post Comment" id = "postcom" name = "send" />
+                </form>
+        	</div>
+        	<div class="right">
+            <form name ="search" action="" method = "post">
+                <!-- <label for="find">Search</label> -->
+                <input type = "search" class = "field" placeholder = "Search..." name = "find" />
+                <!-- <input type = "submit" name = "findbutton" value = "Search" /> -->
+                <hr>
+                <h5>Archive</h5>
+                <div class = "archive">
+                    <ul class = "hierarchy">
+                        <li class = "year">
+                            <input class="hide" id="2016" type="checkbox">
+                            <label for="2016">2016</label>
+                            <div>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="August2016" type="checkbox">
+                                        <label for="August2016">August</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="July2016" type="checkbox">
+                                        <label for="July2016">July</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class = "hierarchy">
+                        <li class = "year">
+                            <input class="hide" id="2015" type="checkbox">
+                            <label for="2015">2015</label>
+                            <div>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="November2015" type="checkbox">
+                                        <label for="November2015">November</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class = "hierarchy">
+                                    <li class = "month">
+                                        <input class="hide" id="December2015" type="checkbox">
+                                        <label for="December2015">December</label>
+                                        <div>
+                                            <ul class = "posts">
+                                                <li><a href = "article.html">article1</a></li>
+                                                <li><a href = "article.html">article2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        	<div style = "clear:both"></div>
+        </div>
+    </div>
+    <footer>My blog &copy; 2016</footer>
+</body>
+</html>
