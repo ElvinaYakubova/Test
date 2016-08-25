@@ -6,7 +6,7 @@
 	margin-left: 5%;
 }
 
-.preview #article {
+.preview .article {
 	float: left;
 	border: 1px solid silver;
 	box-sizing: border-box;
@@ -16,17 +16,17 @@
 	margin-bottom: 10px;
 }
 @media(min-width: 800px) {
-	.preview #article {
+	.preview .article {
 		width: 45%;
 		min-height: 200px;
 	}
 }
 
 @media(max-width: 800px) {
-	.preview #article {	width: 90%; }
+	.preview .article {	width: 90%; }
 }
 
-.preview #article img {
+.preview .article img {
 	width: 100%;
 	border-radius: 5px 5px 0px 0px;
 	border-bottom: 1px silver;
@@ -34,38 +34,38 @@
 }
 
 @media(min-width: 1400px) {
-	.preview #article img {	height: 190px; }
+	.preview .article img {	height: 190px; }
 }
 
 @media(min-width: 1200px) and (max-width: 1400px) {
-	.preview #article img {	height: 170px; }
+	.preview .article img {	height: 170px; }
 }
 
 @media(min-width: 1000px) and (max-width: 1200px) {
-	.preview #article img {	height: 140px; }
+	.preview .article img {	height: 140px; }
 }
 
 @media(min-width: 800px) and (max-width: 1000px){
-	.preview #article img { height: 100px; }
+	.preview .article img { height: 100px; }
 }
 
 @media(min-width: 600px) and (max-width: 800px) {
-	.preview #article img {	height: 160px; }
+	.preview .article img {	height: 160px; }
 }
 
 @media(min-width: 500px) and (max-width: 600px) {
-	.preview #article img {	height: 130px; }
+	.preview .article img {	height: 130px; }
 }
 
 @media(min-width: 400px) and (max-width: 500px) {
-	.preview #article img {	height: 110px; }
+	.preview .article img {	height: 110px; }
 }
 
 @media(max-width: 400px) {
-	.preview #article img {	height: 90px; }
+	.preview .article img {	height: 90px; }
 }
 
-.preview #article h3 {
+.preview .article h3 {
 	width: 90%;
 	margin-left: 5%;
 	font-weight: normal;
@@ -73,13 +73,13 @@
 	color: purple;
 }
 
-.preview #article p {
+.preview .article p {
 	width: 80%;
 	margin-left: 10%;
 	text-indent: 1em;
 }
 
-.preview #article a {
+.preview .article a {
 	float: left;
 	padding: 10px 5px;
 	background-color: #f1e8bc;
@@ -92,7 +92,7 @@
 	transition: none;
 }
 
-.preview #article a:hover {
+.preview .article a:hover {
 	background-color: silver;
 	color: purple;
 	font-weight: bold;

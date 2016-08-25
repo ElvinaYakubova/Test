@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        My blog
+    </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name = "keywords" content = "blog, travel, cooking, beauty" />
+    <meta name = "description" content = "Test site" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel = "stylesheet" type="text/css" />
+    <link href="css/admin.css" rel = "stylesheet" type="text/css" />
+    <link href="img/icon.ico" rel="shortcut icon" type="image/x-icon" >
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+
+</head>
+<body>
+    <header>
+         <a href = "index.html"><h1>MY BLOG</h1></a>
+    </header>
+    <div class="wrapper">
+
+        <div class="admin">
+                <form method = "post">
+                    <textarea name="editor1" id="editor1" rows="10" cols="80">
+                        Text area
+                    </textarea>
+                    <script>
+                        CKEDITOR.replace( 'editor1' );
+                    </script>
+                    <input type = "submit" value = "Publish" id = "publish" name = "publish" />
+                    <p><a href = "admin_main.html">Back</a></p>
+                </form>
+                
+        </div>
+    </div>
+    <footer>My blog &copy; 2016</footer>
+</body>
+</html>
