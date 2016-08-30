@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS article (
 ) DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
 CREATE TABLE IF NOT EXISTS tag (
- id int(10) unsigned NOT NULL,
+ id int(10) unsigned NOT NULL AUTO_INCREMENT,
  name varchar(20) NOT NULL,
  PRIMARY KEY (id),
  UNIQUE KEY name (name)
