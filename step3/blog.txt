@@ -1,0 +1,83 @@
+CREATE DATABASE IF NOT EXISTS blog
+CHARACTER SET = utf8
+COLLATE utf8_general_ci;
+
+use blog;
+
+CREATE TABLE IF NOT EXISTS category (
+ id int(1) unsigned NOT NULL AUTO_INCREMENT,
+ name varchar(20) NOT NULL,
+ PRIMARY KEY (id),
+ UNIQUE KEY name (name)
+) DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS article (
+ id int(10) unsigned NOT NULL AUTO_INCREMENT,
+ title varchar(255) NOT NULL,
+ author_id int(10) unsigned NOT NULL,
+ create_at date NOT NULL,
+ update_at datetime,
+ category_id int(1) unsigned NOT NULL,
+ intro_text text NOT NULL,
+ full_text text NOT NULL,
+ PRIMARY KEY (id),
+ FOREIGN KEY (category_id) REFERENCES category (id)
+) DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS tag (
+ id int(10) unsigned NOT NULL,
+ name varchar(20) NOT NULL,
+ PRIMARY KEY (id),
+ UNIQUE KEY name (name)
+) DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS art_tag (
+ article_id int(10) unsigned NOT NULL,
+ tag_id int(10) unsigned NOT NULL,
+ PRIMARY KEY(article_id,tag_id),
+ FOREIGN KEY (article_id) REFERENCES article (id),
+ FOREIGN KEY (tag_id) REFERENCES tag (id)
+) DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS user (
+ id int(10) unsigned NOT NULL AUTO_INCREMENT,
+ session_id varchar(255) NOT NULL,
+ email varchar(100) NOT NULL,
+ password varchar(30) NOT NULL,
+ name varchar(50) NOT NULL,
+ role tinyint(1) unsigned NOT NULL,
+ PRIMARY KEY (id),
+ UNIQUE KEY email (email)
+) DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS comment (
+ id int(10) unsigned NOT NULL AUTO_INCREMENT,
+ user_id int(10) unsigned NOT NULL,
+ article_id int(10) unsigned NOT NULL,
+ text text NOT NULL,
+ create_com datetime NOT NULL,
+ update_com datetime,
+ parrent_com_id int(10) unsigned,
+ PRIMARY KEY (id),
+ FOREIGN KEY (article_id) REFERENCES article (id),
+ FOREIGN KEY (user_id) REFERENCES user (id)
+) DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+CREATE TABLE IF NOT EXISTS like_dislike (
+ user_id int(10) unsigned NOT NULL,
+ object_id int(10) unsigned NOT NULL,
+ object_type tinyint(1) unsigned NOT NULL,
+ like_dislike tinyint(1) unsigned NOT NULL,
+ PRIMARY KEY (user_id, object_id, object_type),
+ FOREIGN KEY (user_id) REFERENCES user (id),
+ FOREIGN KEY (object_id) REFERENCES article (id),
+ FOREIGN KEY (object_id) REFERENCES comment (id)
+) DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS fav_article (
+ article_id int(10) unsigned NOT NULL,
+ user_id int(10) unsigned NOT NULL,
+ PRIMARY KEY (article_id, user_id),
+ FOREIGN KEY (article_id) REFERENCES article (id),
+ FOREIGN KEY (user_id) REFERENCES user (id)
+) DEFAULT CHARSET=utf8;
