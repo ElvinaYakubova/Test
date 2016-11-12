@@ -159,6 +159,11 @@ text-align:center;
 
 .menu_admin img{
 	width: 70px;
+	height: 70px;
+}
+
+.menu_admin span{
+	margin-top:5px;
 }
 
 .menu_admin a:hover {

@@ -46,8 +46,8 @@
                                         <input type="radio"';
                                         if ($row["published"] == 1) echo 'checked';
                                         echo ' disabled>
-                                        <a href="?option=update_article&id='.$row["id"].'"><img src="img/edit.png" alt="edit" /></a>
-                                        <a href="?option=delete_article&id='.$row["id"].'" onclick="return confirm(\'are you sure?\') ? true : false;"><img src="img/delete.png" alt="delete" /></a>
+                                        <a href="?option=update_article&id='.$row["id"].'"><span class="sprite sprite-edit"></span></a>
+                                        <a href="?option=delete_article&id='.$row["id"].'" onclick="return confirm(\'are you sure?\') ? true : false;"><span class="sprite sprite-delete"></span></a>
                                     </td>
                                 </tr>';
                         }

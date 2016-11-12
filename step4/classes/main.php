@@ -27,8 +27,24 @@
                     <p>'.$row['full_text'].'</p>
                     <h4>'.$row["date"].'</h4>
                     <h3>Category: '.$row["category"].'</h3>
-                    <h3>Author: '.$row["user"].'</h3>';
-                echo '</article>';
+                    <h3>Author: '.$row["user"].'</h3>
+					<div style = "clear:both"></div>
+		                    <div class = "act">
+		                        <a href = "" id = "vote1"><span class="sprite sprite-like"></span>(cnt)</a>
+		                        <a href = "" id = "vote2"><span class="sprite sprite-dislike"></span>(cnt)</a>
+		                        <a href = "#comment" id = "comment"><span class="sprite sprite-comment"></span>(cnt)</a>
+		                        <a href = "" id = "fav" ><span class="sprite sprite-fav"></span></a>
+		                    </div>
+		                    <div style = "clear:both"></div>
+		                    <h3>Tags: </h3>';
+							$query_tag = $this->db->prepare("SELECT tag.id, tag.name AS name, art_tag.article_id 
+								FROM tag RIGHT JOIN (article RIGHT JOIN art_tag ON article.id = art_tag.article_id) ON tag.id = art_tag.tag_id
+								WHERE art_tag.article_id = ? ");
+							$query_tag->execute(array($row['id']));
+							echo '<div class = "tags">';
+							while ($row_tag = $query_tag->fetch()) echo '<a href = "">'.$row_tag['name'].'</a>';
+							echo '</div>
+                </article>';
 			}
 			echo '</div>';
 		}

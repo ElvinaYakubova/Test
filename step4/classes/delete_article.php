@@ -11,6 +11,7 @@
 				if ($count == 1) $_SESSION['res']  = "Successfully deleted";
 				else $_SESSION['res']  = "Error";
 				header("Location:?option=admin");
+				exit;
 			}
 			else {
 				exit("Incorrect data");

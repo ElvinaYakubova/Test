@@ -16,21 +16,15 @@
 		}
 
 		protected function get_header() {
-			include 'admin_header.php';
+			include 'view/admin_header.php';
 		}
 
 		protected function get_menu() {
-			echo '
-			<div class="wrapper">
-        	<ul class = "menu_admin">
-	            <li><a href = "?option=create_article"><img src="img/new_article.png" alt="create new article" title="create new article" />New Article</a></li>
-	            <li><a href = "?option=admin" ><img src="img/articles.png" alt="show articles" title="show all articles" />Articles</a></li>
-	            <li><a href = "?option=login" ><img src="img/exit.png" alt="exit" title="exit" />Exit</a></li>
-        	</ul>';
+			include 'view/admin_menu.php';
 		}		
 
 		protected function get_footer() {
-			include 'footer.php';
+			include 'view/footer.php';
 		}
 
 		public function get_body() {

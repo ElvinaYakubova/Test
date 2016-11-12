@@ -12,11 +12,11 @@
 		}
 
 		protected function get_header() {
-			include 'header.php';
+			include 'view/header.php';
 		}
 
 		protected function get_menu() {
-			include 'menu.php';
+			include 'view/menu.php';
 		}
 
 		protected function get_right_bar(){
@@ -65,7 +65,7 @@
 		}
 
 		protected function get_footer() {
-			include 'footer.php';
+			include 'view/footer.php';
 		}
 
 		public function get_body() {

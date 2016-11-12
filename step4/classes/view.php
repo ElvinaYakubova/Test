@@ -30,10 +30,10 @@
 		                    <h3>Author: '.$row["user"].'</h3>
 		                    <div style = "clear:both"></div>
 		                    <div class = "act">
-		                        <a href = "" id = "vote1"><img src = "img/like.png" alt="Vote: like" title="Vote: like"/>(cnt)</a>
-		                        <a href = "" id = "vote2"><img src = "img/dislike.png" alt="Vote: dislike" title="Vote: dislike" />(cnt)</a>
-		                        <a href = "#comment" id = "comment"><img src = "img/comment.png" alt="Comment" title="Comment"  />(cnt)</a>
-		                        <a href = "" id = "fav" ><img src = "img/fav.png" alt="Add to fav" title="Add to fav" /> </a>
+		                        <a href = "" id = "vote1"><span class="sprite sprite-like"></span>(cnt)</a>
+		                        <a href = "" id = "vote2"><span class="sprite sprite-dislike"></span>(cnt)</a>
+		                        <a href = "#comment" id = "comment"><span class="sprite sprite-comment"></span>(cnt)</a>
+		                        <a href = "" id = "fav" ><span class="sprite sprite-fav"></span></a>
 		                    </div>
 		                    <div style = "clear:both"></div>
 		                    <h3>Tags: </h3>';

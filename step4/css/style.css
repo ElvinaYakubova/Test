@@ -83,7 +83,7 @@ hr {
 	padding: 0;
 }
 
-.arrowl img , .arrowr img {
+.arrowl, .arrowr img {
 	max-width: 100%;
 	height: auto;
 	width: auto\9;
@@ -378,8 +378,8 @@ footer:hover {
 	text-align: center;
 }
 
-.social img {
-	width: 7%;
+.social span {
+	/*width: 7%;*/
 	padding-top: 1%;
 }
 
@@ -449,4 +449,6 @@ footer:hover {
 .posts a:active{
 	color: silver;
 }
+
+
 

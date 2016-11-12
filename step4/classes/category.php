@@ -32,8 +32,8 @@
 					if (!$res) echo "Page can't be found";
 					else {
 						echo'
-						<div class = "arrowl"><a href= ""><img src="img/left.png" alt = "left" /></a></div>
-	               		<div class = "arrowr"><a href= ""><img src="img/right.png" alt = "right" /></a></div>';
+						<div class = "arrowl"><a href= ""><span class="sprite sprite-left"></span></a></div>
+	               		<div class = "arrowr"><a href= ""><span class="sprite sprite-right"></span></a></div>';
 	               	}
 				}
 			}

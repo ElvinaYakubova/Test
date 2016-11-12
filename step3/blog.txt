@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS article (
  category_id int(1) unsigned NOT NULL,
  intro_text text NOT NULL,
  full_text text NOT NULL,
+ published tinyint(1) UNSIGNED DEFAULT NULL,
  PRIMARY KEY (id),
  FOREIGN KEY (category_id) REFERENCES category (id)
 ) DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
@@ -43,7 +44,7 @@ CREATE TABLE IF NOT EXISTS user (
  id int(10) unsigned NOT NULL AUTO_INCREMENT,
  session_id varchar(255) NOT NULL,
  email varchar(100) NOT NULL,
- password varchar(30) NOT NULL,
+ password varchar(30),
  name varchar(50) NOT NULL,
  role tinyint(1) unsigned NOT NULL,
  PRIMARY KEY (id),
