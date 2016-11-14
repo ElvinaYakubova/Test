@@ -1,0 +1,215 @@
+.admin {
+	background-color: #fafafa;
+	width: 100%;
+}
+.admin > a {
+	float: left;
+	text-align: center;
+	margin: 20px;
+}
+
+.admin img{
+	width: 70px;
+	height: 70px;
+}
+
+.admin form #publish, #save, #save_new {
+	width: 30%;
+	padding: 5px;
+	background-color: purple;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #fafafa;
+	cursor: pointer;
+}
+
+.admin form {
+	padding-bottom: 10px;
+}
+
+.admin form #intro, #title, #tag {
+	margin: 1%;
+	padding: 2%;
+	width:93%;
+	outline: none;
+	-moz-appearance: none;
+	resize: none;
+	border: 2px solid purple;
+}
+
+.admin form select {
+	width: 20%;
+    padding: 10px;
+    margin: 1%;
+    background: #fff;
+    color:#000;
+    border: 2px solid purple;
+}
+
+.admin form #back{
+	float: right;
+	padding:5px;
+	margin: 5px;
+	background-color: purple;
+	border-radius: 5px;
+	margin-top: 10px;
+	color: #fafafa;
+}
+
+@media (min-width: 500px) {
+.admin form #publish, #save, #save_new, #back{
+	font-size: 1.5em;
+}
+}
+
+@media (max-width: 500px) {
+.admin form #publish, #save, #save_new, #back{
+	font-size: 1em;
+}
+}
+
+.admin form  p{
+	float: left;
+	padding: 15px;
+	font-weight: bold;
+}
+
+
+table.tablesorter {
+	clear: both;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	table-layout: fixed;
+	word-wrap: break-word;
+	padding-bottom: 20px;
+	font: "Segoe UI", sans-serif;
+}
+
+table.tablesorter thead th {
+	width: 16%;
+	background: #f1e8bc;
+	color: purple;
+	text-shadow: 0 1px 1px #2D2020;
+	padding: 10px 20px;
+}
+
+table.tablesorter tbody td {
+	color: #000;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid silver;
+}
+
+table.tablesorter tbody td{
+	margin: none;
+}
+
+table.tablesorter tbody td img{
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+
+@media (min-width: 700px){
+	table.tablesorter{
+		font-size: 1em;
+	}
+}
+@media (max-width: 700px){
+	table.tablesorter{
+		font-size: 0.7em;
+	}
+}
+
+::-webkit-input-placeholder {
+text-align:center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align:center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align:center;  
+}
+
+:-ms-input-placeholder {  
+   text-align:center; 
+}
+
+
+/*menu*/
+
+.menu_admin{
+	font-family: Comic Sans MS, sans-serif;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+@media (min-width: 1600px) {
+..menu_admin {	font-size: 1.7em; }
+.menu_admin a {
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+}
+
+.menu_admin img{
+	width: 70px;
+	height: 70px;
+}
+
+.menu_admin span{
+	margin-top:5px;
+}
+
+.menu_admin a:hover {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.menu_admin a:active{
+	font-weight: bold;
+	color: white;
+}
+
+.menu_admin li {
+	display: inline;
+}
+
+
+
+#tags{
+  padding:10px;
+}
+#tags > span{
+  cursor:pointer;
+  display:block;
+  float:left;
+  color:#fff;
+  background: purple;
+  padding:5px;
+  padding-right:10px;
+  margin:4px;
+}
+#tags > span:hover{
+  opacity:0.7;
+}
+#tags > span:after{
+ /*position:absolute;*/
+ content:"×";
+ border:1px solid;
+ padding:2px 5px;
+ margin-left:3px;
+ font-size:12px;
+}
+#tags > input{
+  background:#eee;
+  border:1px solid silver;
+  margin:4px;
+  padding:7px;
+  width:auto;
+}

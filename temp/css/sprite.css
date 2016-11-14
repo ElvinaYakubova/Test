@@ -1,0 +1,93 @@
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-Facebook {
+	background-image: url(../img/sprite.png);
+    width: 64px;
+    height: 64px;
+    background-position: -5px -5px;
+}
+
+.sprite-Instagram {
+	background-image: url(../img/sprite.png);
+    width: 64px;
+    height: 64px;
+    background-position: -79px -5px;
+}
+
+.sprite-Twitter {
+	background-image: url(../img/sprite.png);
+    width: 64px;
+    height: 64px;
+    background-position: -153px -5px;
+}
+
+.sprite-articles {
+    width: 64px;
+    height: 64px;
+    background-position: -5px -79px;
+}
+
+.sprite-comment {
+    width: 20px;
+    height: 20px;
+    background-position: -79px -79px;
+}
+
+.sprite-delete {
+    width: 16px;
+    height: 16px;
+    background-position: -227px -5px;
+}
+
+.sprite-dislike {
+    width: 20px;
+    height: 20px;
+    background-position: -109px -79px;
+}
+
+.sprite-edit {
+    width: 16px;
+    height: 16px;
+    background-position: -227px -31px;
+}
+
+.sprite-exit {
+    width: 62px;
+    height: 65px;
+    background-position: -139px -79px;
+}
+
+.sprite-fav {
+    width: 20px;
+    height: 20px;
+    background-position: -211px -79px;
+}
+
+.sprite-left {
+    width: 100px;
+    height: 100px;
+    background-position: -253px -5px;
+}
+
+.sprite-like {
+    width: 20px;
+    height: 20px;
+    background-position: -79px -115px;
+}
+
+.sprite-new_article {
+    width: 64px;
+    height: 64px;
+    background-position: -211px -115px;
+}
+
+.sprite-right {
+    width: 100px;
+    height: 100px;
+    background-position: -5px -189px;
+}
+
