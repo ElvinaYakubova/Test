@@ -50,7 +50,8 @@
 
 			if(method_exists($controller, $action))
 			{
-				$controller->$action();
+				if (isset($routes[4])) $controller->$action($routes[4]);
+				else $controller->$action();
 			}
 			else Router::ErrorPage404();
 			

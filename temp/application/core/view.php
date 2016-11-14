@@ -2,7 +2,7 @@
 	class View
 		{
 			
-			function generate($content_view, $template_view, $data = null)
+			function generate($content_view, $template_view, $data = null, $data_archive = null)
 			{
 				/*
 				if(is_array($data)) {
