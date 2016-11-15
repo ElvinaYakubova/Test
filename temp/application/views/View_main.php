@@ -14,7 +14,7 @@
 				<div class="left">
 					<?php foreach ($data as $row) { ?>
 					    	<article>
-								<a class = "title" href="main/view/<?php echo $row['id']?>"><h2><?php echo $row['title']?></h2></a>
+								<a class = "title" href="view/<?php echo $row['id']?>"><h2><?php echo $row['title']?></h2></a>
 				                    <p><?php echo $row['full_text']?></p>
 				                    <h4><?php echo $row["date"]?></h4>
 				                    <h3>Category:<?php echo $row["category"]?></h3>

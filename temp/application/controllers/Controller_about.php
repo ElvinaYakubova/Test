@@ -1,23 +1,20 @@
 <?php
 	include "application/models/Model_archive.php";
 
-	class Controller_main  extends Controller
+	class Controller_about  extends Controller
 	{
 		function __construct()
 		{
-			$this->model = new Model_main();
 			$this->view = new View();
 			$this->model_archive = new Model_archive();
 		}
 		
 		function action_index()
 		{
+			$data = NULL;
 			$data_archive = $this->model_archive->get_data();
-			$data = $this->model->get_data();
-			$this->view->generate('View_main.php', 'client.php', $data, $data_archive);
+			$this->view->generate('View_about.php', 'client.php', $data, $data_archive);
 		}
-
-		
 	}
 
 ?>

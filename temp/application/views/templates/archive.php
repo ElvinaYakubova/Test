@@ -36,7 +36,7 @@
 					               								$k = $j+1;
 					               								while($k--) {
 					               									if ( $data_archive[$k]['month'] != $month) break; //если неподходящий месяц, то выходим
-					               									echo '<li><a href = "">'. $data_archive[$k]['title'].'</a></li>';
+					               									echo '<li><a href = "view/'.$data_archive[$k]['id'].'">'. $data_archive[$k]['title'].'</a></li>';
 					               								}
 					               								echo '
 									                	    	</ul>

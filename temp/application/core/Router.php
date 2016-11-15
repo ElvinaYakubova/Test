@@ -43,14 +43,13 @@
 				include "application/controllers/".$controller_file;
 			}
 
-			else Router::ErrorPage404();
-
 			$controller = new $controller_name;
 			$action = $action_name;
 
+			if ($controller_name == 'Controller_view') $action = 'action_view';
 			if(method_exists($controller, $action))
 			{
-				if (isset($routes[4])) $controller->$action($routes[4]);
+				if ($controller_name == 'Controller_view') $controller->$action($routes[3]);
 				else $controller->$action();
 			}
 			else Router::ErrorPage404();

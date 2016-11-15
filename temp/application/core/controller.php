@@ -12,5 +12,6 @@
 		function action_index()
 		{
 		}
+
 	}
 ?>
