@@ -13,7 +13,11 @@
 		    </div>
 		    <?php } ?>
 		</div>
-		<div class = "arrowl"><a href= ""><span class="sprite sprite-left"></span></a></div>
-	    <div class = "arrowr"><a href= ""><span class="sprite sprite-right"></span></a></div>
+		<div class = "arrowl">
+			<a href= ""><span class="sprite sprite-left"></span></a>
+		</div>
+	    <div class = "arrowr">
+	    	<a href= ""><span class="sprite sprite-right"></span></a>
+	    </div>
 
 	</div>

@@ -1,7 +1,7 @@
 <?php
 	include "application/models/Model_archive.php";
 
-	class Controller_contact  extends Controller
+	class Controller_index  extends Controller
 	{
 		function __construct()
 		{
@@ -9,12 +9,14 @@
 			$this->model_archive = new Model_archive();
 		}
 		
-		function action_index()
+		function load_archive()
 		{
-			$data = NULL;
+			
 			$data_archive = $this->model_archive->get_data();
-			$this->view->generate('View_contact.php', 'client.php', $data, $data_archive);
+			$this->view->share($data_archive);
 		}
+
+		
 	}
 
 ?>

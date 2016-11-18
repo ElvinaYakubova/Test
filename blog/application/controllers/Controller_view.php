@@ -1,7 +1,6 @@
 <?php
-	include "application/models/Model_archive.php";
-
-	class Controller_view  extends Controller
+	
+	class Controller_view  extends Controller_index
 	{
 		function __construct()
 		{
@@ -12,9 +11,9 @@
 		
 		function action_view($id)
 		{
-			$data_archive = $this->model_archive->get_data();
 			$data = $this->model->get_data($id);
-			$this->view->generate('View_article.php', 'client.php', $data, $data_archive);
+			$this->load_archive();
+			$this->view->generate('View_article.php', 'client.php', $data);
 		}
 	}
 

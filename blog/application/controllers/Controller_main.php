@@ -1,7 +1,5 @@
 <?php
-	include "application/models/Model_archive.php";
-
-	class Controller_main  extends Controller
+	class Controller_main  extends Controller_index
 	{
 		function __construct()
 		{
@@ -12,9 +10,9 @@
 		
 		function action_index()
 		{
-			$data_archive = $this->model_archive->get_data();
 			$data = $this->model->get_data();
-			$this->view->generate('View_main.php', 'client.php', $data, $data_archive);
+			$this->load_archive();
+			$this->view->generate('View_main.php', 'client.php', $data);
 		}
 
 		
