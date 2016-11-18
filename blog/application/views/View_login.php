@@ -1,5 +1,8 @@
 <div class="content">
             	<div class="left">
+            		<div class = "answ">
+            			<h3> <?php if(!empty($data)) echo $data; ?> </h3>
+            		</div>
 	                <form method="POST" action="">
 	                	<label for="Email">Email</label>
 	                    <input type = "text" class = "field" placeholder = "Email" name = "Email" id = "Email" required/>
